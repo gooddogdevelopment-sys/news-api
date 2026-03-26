@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_core_api_w_postgres.Middleware;
+namespace news_api.Middleware;
 
 public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger): IExceptionHandler
 {

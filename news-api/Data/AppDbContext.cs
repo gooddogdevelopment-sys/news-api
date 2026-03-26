@@ -1,7 +1,7 @@
-﻿using dotnet_core_api_w_postgres.Models;
+﻿using news_api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace dotnet_core_api_w_postgres.Data;
+namespace news_api.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {

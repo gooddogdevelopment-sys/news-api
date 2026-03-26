@@ -1,5 +1,5 @@
-using dotnet_core_api_w_postgres.Data;
-using dotnet_core_api_w_postgres.Middleware;
+using news_api.Data;
+using news_api.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 using Serilog;

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace dotnet_core_api_w_postgres.Models;
+namespace news_api.Models;
 
 public abstract class BaseEntity
 {

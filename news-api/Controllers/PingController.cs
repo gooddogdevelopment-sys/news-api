@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_core_api_w_postgres.Controllers;
+namespace news_api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
