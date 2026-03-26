@@ -1,5 +1,6 @@
 using news_api.Data;
 using news_api.Middleware;
+using news_api.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 using Serilog;
@@ -16,6 +17,9 @@ builder.Host.UseSerilog();
 // Database
 builder.Services.AddDbContext<AppDbContext>(opts =>
     opts.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+
+// NewsAPI
+builder.Services.AddScoped<INewsApiService, NewsApiService>();
 
 // Exception handling (RFC 9457 Problem Details)
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
